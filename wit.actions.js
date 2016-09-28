@@ -57,6 +57,11 @@ module.exports = {
     },
 
     /**** Add your own functions HERE ******/
+
+    getAccountBalanceTotal(sessionId, context, callback) {
+        context.balance = '10000';
+        callback(context);
+    }
 };
 
 // Helper function to get the first message
